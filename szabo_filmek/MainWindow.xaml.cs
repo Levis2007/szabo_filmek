@@ -55,6 +55,20 @@ namespace szabo_filmek
             MessageBox.Show($"A leghosszabb film: {leghosszabb.Cim}, perc: {leghosszabb.Hossz}");
         }
 
+        private void atlagos_ertekeles(object sender, RoutedEventArgs e)
+        {
+            double osszeg = 0;
+            int db = 0;
+
+            foreach (var item in filmek)
+            {
+                osszeg += item.Ertekeles;
+                db++;
+            }
+            double atlag = osszeg / db;
+            MessageBox.Show($"Az átlagos értékelése: {atlag}");
+        }
+
         
     }
 }
