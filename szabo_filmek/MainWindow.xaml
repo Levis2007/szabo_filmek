@@ -7,6 +7,29 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
 
+        <GroupBox Grid.Column="0">
+            <StackPanel>
+                <Button Content="Filmek betöltése" Margin="10"/>
+                <Button Content="Hány film van?" Margin="10"/>
+                <Button Content="Melyik a leghosszabb film?" Margin="10"/>
+                <Button Content="Átlag értékelés" Margin="10"/>
+                <Button Content="Csak sci-fi" Margin="10"/>
+                <Button Content="Csak címek" Margin="10"/>
+                <Button Content="Rendezés cím szerint" Margin="10"/>
+                <ProgressBar Height="20" Margin="10" Maximum="100" Minimum="0" Value="15"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Grid.Column="1">
+            <StackPanel>
+                <DataGrid x:Name="filmekdtg" AutoGenerateColumns="True">
+
+                </DataGrid>
+            </StackPanel>
+        </GroupBox>
     </Grid>
 </Window>

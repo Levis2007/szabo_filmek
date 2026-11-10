@@ -20,5 +20,10 @@ namespace szabo_filmek
         {
             InitializeComponent();
         }
+
+        private void filmek_betoltese(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
