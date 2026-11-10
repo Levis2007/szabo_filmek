@@ -16,11 +16,11 @@
             <StackPanel>
                 <Button Content="Filmek betöltése" Margin="10" Click="filmek_betoltese"/>
                 <Button Content="Hány film van?" Margin="10" Click="hany_film_van"/>
-                <Button Content="Melyik a leghosszabb film?" Margin="10"/>
-                <Button Content="Átlag értékelés" Margin="10"/>
-                <Button Content="Csak sci-fi" Margin="10"/>
-                <Button Content="Csak címek" Margin="10"/>
-                <Button Content="Rendezés cím szerint" Margin="10"/>
+                <Button Content="Melyik a leghosszabb film?" Margin="10" Click="leghosszabb_film" />
+                <Button Content="Átlag értékelés" Margin="10" Click="atlagos_ertekeles" />
+                <Button Content="Csak sci-fi" Margin="10" Click="csak_scifi"/>
+                <Button Content="Csak címek" Margin="10" Click="csak_cimek"/>
+                <Button Content="Rendezés cím szerint" Margin="10" Click="rendezes_cim_szerint"/>
                 <ProgressBar Height="20" Margin="10" Maximum="100" Minimum="0" Value="15"/>
             </StackPanel>
         </GroupBox>

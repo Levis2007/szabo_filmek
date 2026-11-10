@@ -39,5 +39,22 @@ namespace szabo_filmek
         {
             MessageBox.Show($"Összesen {filmek.Count()} film van");
         }
+
+        private void leghosszabb_film(object sender, RoutedEventArgs e)
+        {
+            Film leghosszabb = filmek[0];
+
+            foreach (var item in filmek)
+            {
+                if (item.Hossz > leghosszabb.Hossz)
+                {
+                    leghosszabb = item;
+                }
+            }
+
+            MessageBox.Show($"A leghosszabb film: {leghosszabb.Cim}, perc: {leghosszabb.Hossz}");
+        }
+
+        
     }
 }
