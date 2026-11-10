@@ -14,8 +14,8 @@
 
         <GroupBox Grid.Column="0">
             <StackPanel>
-                <Button Content="Filmek betöltése" Margin="10"/>
-                <Button Content="Hány film van?" Margin="10"/>
+                <Button Content="Filmek betöltése" Margin="10" Click="filmek_betoltese"/>
+                <Button Content="Hány film van?" Margin="10" Click="hany_film_van"/>
                 <Button Content="Melyik a leghosszabb film?" Margin="10"/>
                 <Button Content="Átlag értékelés" Margin="10"/>
                 <Button Content="Csak sci-fi" Margin="10"/>
