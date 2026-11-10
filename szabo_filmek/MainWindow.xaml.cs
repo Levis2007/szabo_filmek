@@ -105,6 +105,13 @@ namespace szabo_filmek
             filmekdtg.ItemsSource = cimek;
         }
 
-        
+        private void rendezes_cim_szerint(object sender, RoutedEventArgs e)
+        {
+            List<Film> cimSzerint = filmek
+                                        .OrderBy(x => x.Cim)
+                                        .ToList();
+
+            filmekdtg.ItemsSource = cimSzerint;
+        }
     }
 }
