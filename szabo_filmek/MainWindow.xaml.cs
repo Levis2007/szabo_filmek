@@ -69,6 +69,20 @@ namespace szabo_filmek
             MessageBox.Show($"Az átlagos értékelése: {atlag}");
         }
 
+        private void csak_scifi(object sender, RoutedEventArgs e)
+        {
+            List<Film> sci_fi = new List<Film>();
+
+            foreach (var item in filmek)
+            {
+                if (item.Mufaj == "sci-fi".ToLower())
+                {
+                    sci_fi.Add(item);
+                }
+            }
+            filmekdtg.ItemsSource = sci_fi;
+        }
+
         
     }
 }
