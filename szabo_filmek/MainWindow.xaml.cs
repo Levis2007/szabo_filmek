@@ -83,6 +83,28 @@ namespace szabo_filmek
             filmekdtg.ItemsSource = sci_fi;
         }
 
+        private void csak_cimek(object sender, RoutedEventArgs e)
+        {
+            List<string> cimek = new List<string>();
+
+            foreach (var item in filmek)
+            {
+                cimek.Add(item.Cim);
+            }
+
+            filmekdtg.AutoGenerateColumns = false;
+            filmekdtg.Columns.Clear();
+
+            DataGridTextColumn oszlop = new DataGridTextColumn();
+
+            oszlop.Header = "Film címe";
+            oszlop.Binding = new Binding();
+
+            filmekdtg.Columns.Add(oszlop);
+
+            filmekdtg.ItemsSource = cimek;
+        }
+
         
     }
 }
